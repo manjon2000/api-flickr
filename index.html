@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API FLICKR</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Styles -->
+    <script src="https://kit.fontawesome.com/762a7ec47b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body> 
+
+
+
+    <div class="title__page">
+        <p>Buscador de imagenes con: <b>API FLICKR</b></p>
+    </div>
+
+    <nav class="navbar">
+        
+        <div class="navbar__search">
+            <div class="input__group__search">
+                <div class="input__search">
+                    <input type="text" placeholder="Buscar elementos"  id="search">
+                </div>
+                <div class="icon__search" id="search-value">
+                    <i class="fas fa-search"></i>
+                </div>  
+            </div>
+        <div class="navbar__filter">
+            <div class="filter__item uno" id="default">
+                <button><i class="fas fa-boxes"></i></button>
+            </div>
+            <div class="filter__item dos" id="">
+                <button><i class="fas fa-list"></i></button>
+            </div>
+            <div class="filter__item tres">
+                <button><i class="fas fa-image"></i></button>
+            </div>
+        </div>
+        <div class="navbar__custom_mostrar_entrada">
+            <select id="limitador_items">
+                <option >Limitar elementos</option>
+                <option value="10" selected="selected">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+            </select>
+        </div>
+    </nav>
+    
+    <div id="loader" class="display-none">
+        <img src="./assets/img/Spinner-1.8s-191px.gif" alt="">
+    </div>
+
+
+    <!-- <div class="img_item">
+        <div class="item_image">
+            <img src="https://live.staticflickr.com/65535/51995544632_a684389737_c.jpg" alt="">
+        </div>
+        <div class="item__image__title">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, magni?</p>
+        </div>  
+    </div> -->
+    
+    <div id="galeria_imagenes" class="default"></div>
+    <div id="modal__item_overlay">
+        <div id="btn__close"><i class="fa fa-close"></i></div>
+        <div id="modal_content">
+            <!-- <div class="content__modal">
+                <div class="img__item">
+                    <img src="https://live.staticflickr.com/65535/51991790236_e48b80c9d2_c.jpg" alt="">
+                </div>
+                <div class="titulo__btn--usuario">
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, sapiente.</h2>
+                    <a href="">Ver mas imagenes</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Jquery -->
+    <script  src="./assets/js/main.js"></script>
+</body>
+</html>
